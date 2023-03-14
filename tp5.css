@@ -1,0 +1,77 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenaire
+{
+    width: 50%;
+    height: 70%;
+    border: 10px solid #d1cfd1;
+    background-color: #d1cfd1;
+}
+.Bloc 
+{
+    width: 100%;
+    height: 80%;
+    border: 2px;
+    padding: 2%;
+    background-color: white;
+}
+ .text
+{
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    line-height: 1.5;
+}
+.check
+{
+    padding: 3%;
+    font-size: 1.3rem;
+    display: flex;
+    gap: 1.5rem;
+}
+.checkbox
+{
+    margin-left: 4%;
+    width: 5%;
+}
+.checkbox:hover
+{
+    cursor: pointer;
+}
+
+.boutton
+{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boutton .bout
+{
+    width: 100%;
+    height: 100%;
+    font-size: 3rem;
+    border-radius: 0 0 3% 3%;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    background-color: #8b32b8;
+    color: white;
+    border: none;
+}
+.boutton .bout:hover
+{
+    cursor: pointer;
+}

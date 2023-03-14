@@ -1,0 +1,152 @@
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.Bloc
+{
+    position: relative;
+    width: 40%;
+    height: 80%;
+    border: 20px solid #5d3596;
+    background-color:#3e025c;
+}
+.blocSaisie
+{
+    height: 18%;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+#saisie
+{
+    position: relative;
+    width: 95%;
+    height: 100%;
+    background-color: #5d3596;
+    outline: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+}
+.blocChoix
+{
+    position: relative;
+    height: 60%;
+    /* background-color: aquamarine; */
+    padding: 2%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+}
+.lenght
+{
+    width: 100%;
+    margin-left: 3%;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;  
+}
+.taille, .tailleCheck
+{
+    position: absolute;
+    right: 5%;
+    width: 7%;
+    height: 6%;
+    outline: none;
+}
+.checkBox
+{
+    font-weight: bold;
+    margin-left: 3%;
+    font-size: 1.4rem;
+    color: white;
+}
+.tailleCheck
+{
+    width: 5%;
+}
+.blocGenere
+{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+}
+.bout
+{
+    padding: 3%;
+    width: 90%;
+    background-color: orange;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+}
+.tailleCheck:hover, .bout:hover 
+{
+    cursor: pointer;
+}
+.notif1
+{
+    padding: 1.5%;
+    border-radius: 10%;
+    color: white;
+    position: absolute;
+    right: 0;
+    font-size: 2rem;
+    top: 0;
+    background-color: #5aaaef;
+    width: 30%;
+    height: 10%;
+    animation: anim 2s infinite;
+}
+.notif2, .notif3, .notif4
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 2%;
+    border-radius: 10%;
+    color: white;
+    /* text-align: center; */
+    font-size: 2rem;
+    background-color: #5aaaef;
+    width: 30%;
+    animation: anim 2s infinite;
+}
+.blocSaisie i
+{
+    top: 5%;
+    position: absolute;
+    right: 7%;
+    color: white;
+    display: none;
+}
+.blocSaisie i:hover
+{
+    cursor: pointer;
+    background-color: white;
+}
+
+@keyframes anim
+{
+    0%
+    {
+        translate: -5%;
+    }
+    50%
+    {
+        translate: 0;
+    }
+    100%
+    {
+        translate: -5%;
+    }
+}

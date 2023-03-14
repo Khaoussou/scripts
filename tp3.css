@@ -1,0 +1,74 @@
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    height: 80vh;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blocBouton
+{
+    padding: 2%;
+    width: 90%;
+    height: 20%;
+    background-color: whitesmoke;
+    gap: 5rem;
+}
+.bout
+{
+    width: 20%;
+    height: 70%;
+    border-radius: 10%;
+    box-shadow: 0.2rem 0.2rem 0.01rem 0.2rem black;
+    color: aliceblue;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.bout:hover
+{
+    cursor: pointer;
+}
+.b1
+{
+    background-color: rgb(22, 179, 22);
+}
+.b2
+{
+    background-color: red;
+}
+.b3
+{
+    background-color: orange;
+}
+.b4
+{
+    background-color: rgb(0, 195, 255);
+}
+.affiche
+{
+    display: flex;
+    flex-direction: column-reverse;
+    position: absolute;
+    bottom: 2%;
+    right: 0%;
+    width: 30%;
+    height: 40%;
+    gap: 3rem;
+}
+.msg
+{
+    padding: 2%;
+    font-size: 2rem;
+    width: 100%;
+    height: 25%;
+    color: white;
+    border-radius: 10%;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0.2rem 0.2rem 0.01rem 0.2rem black;
+    
+}

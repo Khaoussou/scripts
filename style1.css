@@ -1,0 +1,49 @@
+body
+{
+    height: 90vh;
+    display: flex;
+    padding: 2%;
+}
+.blocGauche
+{
+    width: 33%;
+    background-color: aqua;
+}
+.blocBoouton
+{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bouton
+{
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bout
+{
+    width: 10%;
+    height: 5%;
+}
+.blocDroit
+{
+    width: 33%;
+    background-color: blue;
+}
+p
+{
+    font-size: 2rem;
+    margin-top: 20px;
+    width: 10em;
+}
+p:hover
+{
+    background-color: rgb(0, 0, 255);
+}

@@ -1,0 +1,42 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    padding: 5%;
+    height: 100vh;
+    background-image: url(trees-g445baa572_1920.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+
+}
+.text 
+{
+    text-align: center;
+    font-size: 6rem;
+}
+.temps
+{
+    padding: 5%;
+    height: 40%;
+    width: 100%;
+    font-size: 5rem;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.horloge
+{
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    justify-content: center;
+    font-size: 3rem;
+    gap: 10%;
+}
