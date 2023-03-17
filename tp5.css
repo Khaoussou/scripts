@@ -49,6 +49,7 @@ body
 .checkbox:hover
 {
     cursor: pointer;
+    scale: 1.2;
 }
 
 .boutton
@@ -74,4 +75,5 @@ body
 .boutton .bout:hover
 {
     cursor: pointer;
+    background-color: rgb(0, 149, 255);
 }
