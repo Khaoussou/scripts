@@ -15,16 +15,17 @@ function createElement(elements,attributs,elementContent)
     return element;
 }
 
-function createImage(url,titre,vote,decs)
+function createImage(url,titre,vote,descs)
 {
     const image = createElement('div',{class:'image'})
     const img = createElement('img',{src:url,class:'img'})
+    const desc = createElement('div',{class:'desc'},descs)
     const infoImage = createElement('div',{class:'infoImage'})
     const title = createElement('div',{class:'title'},titre)
     const votes = createElement('button',{class:'vote'},vote)
     
     infoImage.append(title,votes);
-    image.append(img,infoImage);
+    image.append(img,infoImage,desc);
     blocImage.appendChild(image);
 
     return image
@@ -39,25 +40,30 @@ async function getMovies(url)
     return data.results
 }
 
-const movie = getMovies("https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=04c35731a5ee918f014970082a0088b1&page=1")
-movie.then(data => 
-    {
-        // console.log(data);
-        for (let i = 0; i < data.length; i++) 
+let page = 1
+while (page < 500 ) 
+{
+    const movie = getMovies("https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=04c35731a5ee918f014970082a0088b1&page="+page)
+    
+    movie.then(data => 
         {
-            // console.log(data[i]);
+            // console.log(data);
+            for (let i = 0; i < data.length; i++) 
+            {
+                // console.log(data[i]);
                 const url = IMGPATH + data[i].poster_path;
                 const titre = data[i].original_title;
                 const vote = data[i].vote_average;
                 const desc = data[i].overview;
                 const film = createImage(url,titre,vote,desc)
-                tabFilm.push(film);
                 blocImage.append(film);
-        } 
-    
-    })
-    
-// console.log(tabFilm);
+                tabFilm.push(film);
+            }   
+        })
+        page++
+}
+        
+console.log(tabFilm);
 
 input.addEventListener('input',(e)=>
 {

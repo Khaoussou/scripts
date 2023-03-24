@@ -14,6 +14,7 @@ let selection = document.querySelectorAll("input[type='checkbox']");
 // console.log(selection)
 const lowerCase = 'abcdefghijklmnopqrstuvwxyz'
 const upppercase = lowerCase.toUpperCase()
+console.log(upppercase);
 const numbers = [0,1,2,3,4,5,6,7,8,9];
 const caracter = ['&','~','{','[','(','@','`','%','£','$','§','µ','+','=','}']
 let passWord = []

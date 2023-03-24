@@ -32,6 +32,7 @@ body
 }
 .blocImage
 {
+    position: relative;
     padding: 2rem;
     width: 100%;
     gap: 2rem;
@@ -39,23 +40,30 @@ body
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-/* .image:hover
-{
-    background-image: url("Vector (1).png");
-    background-size: cover;
-    
-} */
 .image
 {
+    position: relative;
     height: 50%;
     background-color: #132550;
-   
 }
 .img
 {
     width: 400px;
     height: 300px;
 }
+.desc
+{
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    transform-origin: bottom;
+    opacity: 0;
+}
+.desc:hover
+{
+    opacity: 1; 
+}
+
 .title
 {
     color: white;
@@ -85,3 +93,24 @@ body
     border: none;
     outline: none;
 }
+/* .parent
+{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content:center;
+} */
+/* .text
+{
+
+    width: 10%;
+    position: absolute;
+    bottom: 18%;
+    z-index: 0;
+    scale: 0.1;
+}
+.text:hover
+{
+    cursor: pointer;
+    scale: 1;
+} */
